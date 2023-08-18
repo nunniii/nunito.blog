@@ -1,0 +1,49 @@
+@charset "UTF-8";
+
+@import "./extend.scss";
+
+
+$bg-color: #100e15;
+$link-color: #2163d7;
+$page-width: 70vw;
+$note-width: 50vw;
+$footer-text-color: rgb(71, 71, 71);
+
+
+
+@mixin centralize {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+html{
+    @include font-Inconsolata;
+    font-size: 108%;
+    
+}
+
+body{
+    background-color: $bg-color;
+    @include centralize();
+    flex-direction: column;
+    height: 100vh;
+}
+
+
+
+
+
+
+
+
+
+

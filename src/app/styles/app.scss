@@ -1,0 +1,124 @@
+@charset "UTF-8";
+@import "./extend.scss";
+@import "./root.scss";
+
+
+
+a{
+    text-decoration: none;
+    color: $link-color;
+}
+
+
+
+
+.theGirlImg{
+    width: auto;
+    height: 40%;
+
+    border-width: .5rem;
+    border-image: linear-gradient(to bottom, #0084ff, #3700ff) 1;
+    border-style: solid;
+
+    
+
+    &:hover{
+        @keyframes spin {
+            0% {transform: rotate(0deg);}
+            100% {transform: rotate(360deg);}
+        }
+        animation: spin 3s ease-in-out;
+    }
+
+    top: 30%;
+    right: 15vw;
+    position: absolute;
+}
+
+.paimonImg{
+    width: 7rem;
+    height: auto;
+    bottom: 0;
+    left: .1vw;
+    position: absolute;
+
+    @keyframes subirDescer {
+        0% {
+          transform: translateY(0);
+        }
+        50% {
+          transform: translateY(-2.2rem);
+        }
+        100% {
+          transform: translateY(0);
+        }
+    }
+    animation: subirDescer 5s ease-in-out infinite;
+}
+
+
+
+h1{
+    color: whitesmoke;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: $page-width;
+
+    
+}
+
+
+.header{
+    width: $page-width;
+
+
+    h1{
+        font-size: 2rem;
+        color: whitesmoke;
+        
+    }
+
+
+}
+
+footer{
+    width: $page-width;
+    color: $footer-text-color;
+    a{
+        text-decoration: underline;
+        color: $footer-text-color;
+        &:hover{
+            text-decoration: underline $link-color;
+            color: lighten($footer-text-color, 20%);
+            transition: .3s;
+        }
+    }
+    
+}
+
+
+.publications{
+
+    color: whitesmoke;
+    width: $page-width;
+
+    display: flex;
+    flex-direction: column;
+    gap: .4rem;
+    
+
+    padding: 2rem 1rem 2rem 1.1rem;
+
+    a{
+        &:hover{
+            color: lighten($link-color, 15%)
+        }
+    }
+   
+}
+
