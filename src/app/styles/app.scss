@@ -122,3 +122,48 @@ footer{
    
 }
 
+
+
+
+@media only screen and (max-width: 600px) {
+
+    
+
+    .theGirlImgContainer{
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        width: 100vw,;
+        .theGirlImg{
+            // display: none;
+            width: auto;
+            height: 50%;
+    
+            border-width: .5rem;
+            border-image: linear-gradient(to bottom, #0084ff, #3700ff) 1;
+            border-style: solid;
+    
+            
+            position: relative;
+
+            top: -2.5rem;
+            right: inherit;
+            
+        }
+        
+
+    }
+
+    body{
+        margin: 2rem;
+        justify-content: start;
+    }
+
+
+
+
+    
+
+
+}
+
