@@ -7,7 +7,6 @@ import posts from '../data/postsData.json';
 const Publications: React.FC = () => {
   return (
     <div>
-      <h1>Selecione um Post</h1>
       <ul className='publications'>
         {posts.map((post, index) => (
           <li key={index}>
