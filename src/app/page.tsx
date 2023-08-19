@@ -12,7 +12,9 @@ export default function Home() {
         <Header />
         <Publications />
         <Footer />
-        <Image className='theGirlImg' src={theGirlImg} alt="Girl" />
+        <div className='theGirlImgContainer'>
+          <Image className='theGirlImg' src={theGirlImg} alt="Girl" />
+        </div>
         <Image className='paimonImg' src={paimonImg} alt="Paimon" />
     </>
   )

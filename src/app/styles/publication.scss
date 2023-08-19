@@ -10,7 +10,7 @@ main{
 }
 
 .nav{
-    margin-top: 10rem;
+    margin-top: 5rem;
     margin-bottom: 2rem;
     width: $note-width;
     li{
@@ -89,3 +89,36 @@ footer{
     }
     animation: subirDescer 5s ease-in-out infinite;
 }
+
+
+
+
+@media only screen and (max-width: 600px) {
+    
+    ul{
+        margin-top: 5rem;
+    }
+    
+    
+    main{
+        width: 100vw;
+        padding: 1.5rem;
+    }
+    
+    .publication{
+    @include font-Poppins;
+        display: flex;  
+        flex-direction: column;
+        padding: 0;
+        text-align: justify;
+        justify-content: start;
+        width: auto;
+        margin: 1.5rem;
+        
+    }   
+
+ 
+}
+
+
+
