@@ -167,3 +167,22 @@ footer{
 
 }
 
+.myPage{
+    width: 70vw;
+    margin: 0 auto 1rem auto;
+
+
+    a{
+        font-size: 120% !important;
+        text-decoration: none;
+        color: whitesmoke;
+        &:hover{
+            color: lighten($footer-text-color, 20%);
+            transition: .3s;
+        }
+    }
+
+}
+
+
+
