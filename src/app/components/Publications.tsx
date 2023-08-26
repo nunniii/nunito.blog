@@ -8,6 +8,10 @@ const Publications: React.FC = () => {
   return (
     <div>
       <ul className='publications'>
+        <li>
+          <Link href="/slug/nuniLab">Nuni Lab
+          </Link>
+        </li>
         {posts.map((post, index) => (
           <li key={index}>
             <Link href={`/slug/${index}`}>
