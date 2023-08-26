@@ -1,4 +1,4 @@
-import postsData from "../../app/data/2.json"; 
+import postsData from "../../app/data/1.json"; 
 import Image from 'next/image';
 import paimonImg from '../../../public/paimon.png';
 import "../../app/styles/publication.scss";
